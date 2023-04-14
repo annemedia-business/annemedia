@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAEVIE ANNE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a07196df7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="contaner">
+        <nav>
+            <img src="img/logo2.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Portfolio">Experience</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+    </div>
+</div>
+<!-------------------about-------------->
+<div id="About">
+    <div class="contaner">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/bgc.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am graphic designer and video editor
+                    with a strong background in
+                    marketing design and I love what I do.
+                    With 3years of experience in creating
+                    infographics, Facebook ad creatives,
+                    banners ads, and more. Passionate
+                    about working in a marketing agency,
+                    as that involves creating graphics for
+                    clients in all sorts of fields.
+                    I have a passion for creating
+                    outstanding content that can help
+                    grow your business or brand
+                    exponentially. With my expertise in
+                    post-production, I can help craft
+                    engaging videos that captivate your
+                    audience and drive results.
+                </p>
+            </div>  
+        </div>
+    </div>
+</div>
+<!--------------services---------------------------->
+<div id="services">
+    <div class="contaner">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2></h2>
+                <p> • Wedding Highlight<br>
+                    • Events Highlight<br>
+                    • YouTube Video <br>
+                    • Facebook Ads<br>
+                    • Instagram Ads<br>
+                    • Reels<br>
+                    • Short Films<br>
+                </p>
+            </div>
+            <div>
+                <h2></h2>
+                <p>• Subtitle<br>
+                    • Infographics<br>
+                    • Social Media Materials<br>
+                    • Logo Design<br>
+                    • Poster Layouts<br>
+                    • Flyers<br>
+                    • Business Card<br>
+                </p>
+            </div>
+            <div>
+                <h2></h2>
+                <p>• School Work/Project<br>
+                    • Tarpulin Designs<br>
+                    • Certificate<br>
+                    • Menu<br>
+                    • Invitation Cards<br>
+                    • PowerPoint Presentation<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------portfolio--------------------->
+<div id="Portfolio">
+    <div class="contaner">
+        <h1 class="sub-title">My Work Experience</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="img/work1.jfif">
+                <div class="layer">
+                   <p>Edited social media videos
+                    that resulted in significant
+                    growth in audience
+                    engagement and brand
+                    awareness. And optimized video
+                    content for various social
+                    media platforms, including
+                    YouTube, Facebook,
+                    Instagram and tiktok.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="img/work2.png">
+                <div class="layer">
+                    <p>Worked with clients to
+                        identify their goals, target
+                        audience, and messaging to
+                        produce video content that
+                        drives engagement and
+                        conversion rates.</p>
+                 </div>
+            </div>
+            <div class="work">
+                <img src="img/work4.jfif">
+                <div class="layer">
+                    <p>Created visually stunning and
+                        impactful video content that
+                        effectively conveys brand
+                        messaging and achieves
+                        business objectives.</p>
+                 </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------------------contact-------------->
+<div id="Contact">
+    <div class="contaner">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> jaevieannematias.business@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i> 09099820376</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/ashleygamingcandeey?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/jaevieannematiasbusiness?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://youtube.com/@JaevieAnneMatias"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <a href="img/sampleworks.pdf" onclick class="btn btn2">View Sample Works</a>  
+            </div>
+            <div class="contact-right">
+                <form id="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Ⓒ Jaevie Anne Matias Made with by Anne Media</p>
+        </div>
+    </div>
+</div>
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby3ctI3JcVPdkFNbYHg4U2dZwB-sGHBwWpM3NhN3qyXoaDOfDiF2sObiIiq9axN2QKGGg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html> 
